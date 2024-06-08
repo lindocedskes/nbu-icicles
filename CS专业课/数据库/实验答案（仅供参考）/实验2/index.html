@@ -1,79 +1,95 @@
 
-<!doctype html>
-<html lang="zh" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!doctype html>
+  <html lang="zh" class="no-js">
+    <head>
       
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        
+        
+        
+        
+        <link rel="icon" href="../../../../assets/images/favicon.png">
+        <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.4">
       
-      
-      
-      
-      <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.4">
-    
-    
-      
-        <title>实验2 - nbu-icicles</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.9c788c91.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.2505c338.min.css">
+          <title>实验2 - nbu-icicles</title>
+        
       
       
+        <link rel="stylesheet" href="../../../../assets/stylesheets/main.9c788c91.min.css">
+        
+          
+          <link rel="stylesheet" href="../../../../assets/stylesheets/palette.2505c338.min.css">
+        
+        
 
-    
-    
-    
+      
+      
       
         
+          
+          
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+          <style>:root{--md-text-font:"Roboto";--md-code-font:"JetBrains Mono"}</style>
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
-    
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i&display=fallback">
+      
+        <link rel="stylesheet" href="../../../../css/tasklist.css">
+      
+        <link rel="stylesheet" href="../../../../css/card.css">
+      
+        <link rel="stylesheet" href="../../../../css/custom.css">
+      
+      
+        <link rel="stylesheet" href="../../../../css/counter.css">
+      
+      <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+      
+        
 
+      
+      
+      
+    </head>
     
     
-    
-  </head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
-  
-    
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
+      
       
         
-        <a href="#2init" class="md-skip">
-          跳转至
-        </a>
       
-    </div>
-    <div data-md-component="announce">
       
-    </div>
+      
+      
+      <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
     
-    
+      <script src="../../../../js/scheme.js" type="text/javascript"></script>
       
+      
+        <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+      <label class="md-overlay" for="__drawer"></label>
+      <div data-md-component="skip">
+        
+          
+          <a href="#2init" class="md-skip">
+            跳转至
+          </a>
+        
+      </div>
+      <div data-md-component="announce">
+        
+      </div>
+      
+      
+        
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
@@ -102,8 +118,42 @@
         </div>
       </div>
     </div>
-    
-    
+    <div class="md-header__options">
+      <div class="md-header-nav__scheme md-header-nav__button md-source__icon md-icon">
+          <a
+            href="javascript:toggleScheme();"
+            title="Light mode"
+            class="light-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="Dark mode"
+            class="dark-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="System preference"
+            class="system-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07 19.07 3.5m-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13.51 1.67m-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87.4 1.31M19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35-2.53-2.2m4.33-2.7 1.15-2.77 2.2 2.54-3.35.23m1.15-4.96-1.14-2.78 3.34.24-2.2 2.54M9.63 18.93l2.77 1.15-2.53 2.19-.24-3.34Z"/></svg>
+          </a>
+           <a
+            href="javascript:toggleScheme();"
+            title="Unknown scheme"
+            class="unknown-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10Z"/></svg>
+          </a>
+      </div>
+    </div>
     
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
@@ -142,26 +192,145 @@
   </nav>
   
 </header>
-    
-    <div class="md-container" data-md-component="container">
       
-      
+      <div class="md-container" data-md-component="container">
         
-          
         
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
 
 
-<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <li class="md-tabs__item">
+    <a href="../../../.." class="md-tabs__link">
+      主页
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/readme/" class="md-tabs__link">
+        本科生课程
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        CS专业课
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../%E7%AE%80%E4%BB%8B/%E7%AB%9E%E8%B5%9B/" class="md-tabs__link">
+        竞赛
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../%E7%AE%80%E4%BB%8B/%E5%8D%87%E5%AD%A6/" class="md-tabs__link">
+        升学
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../%E7%AE%80%E4%BB%8B/%E5%B7%A5%E4%BD%9C/" class="md-tabs__link">
+        工作
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../%E7%AE%80%E4%BB%8B/%E7%99%BE%E7%A7%91/" class="md-tabs__link">
+        百科
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+            
+          
+        
+        <main class="md-main" data-md-component="main">
+          <div class="md-main__inner md-grid">
+            
+              
+                
+                <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                  <div class="md-sidebar__scrollwrap">
+                    <div class="md-sidebar__inner">
+                      
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../../.." title="nbu-icicles" class="md-nav__button md-logo" aria-label="nbu-icicles" data-md-component="logo">
       
@@ -204,6 +373,16 @@
       
       <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
@@ -296,11 +475,35 @@
       <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
       
-        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
-          CS专业课
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../">CS专业课</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="CS专业课" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
@@ -309,18 +512,6 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../" class="md-nav__link">
-        概览
-      </a>
-    </li>
-  
-
             
           
             
@@ -386,6 +577,16 @@
       
       <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
@@ -478,6 +679,10 @@
       <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
+        
+          
+        
+      
       
         <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
           升学
@@ -526,6 +731,10 @@
       
       <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
+      
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6" tabindex="0" aria-expanded="false">
@@ -576,6 +785,10 @@
       <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
+        
+          
+        
+      
       
         <label class="md-nav__link" for="__nav_7" tabindex="0" aria-expanded="false">
           百科
@@ -611,16 +824,16 @@
     
   </ul>
 </nav>
+                    </div>
                   </div>
                 </div>
-              </div>
-            
-            
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+              
+                
+                <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                  <div class="md-sidebar__scrollwrap">
+                    <div class="md-sidebar__inner">
+                      
 
 <nav class="md-nav md-nav--secondary" aria-label="目录">
   
@@ -650,246 +863,277 @@
     </ul>
   
 </nav>
+                    </div>
                   </div>
                 </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
                 
+              
+            
+            
+              <div class="md-content" data-md-component="content">
+                <article class="md-content__inner md-typeset">
                   
+                    
 
 
 
   <h1>实验2</h1>
 
-<h2 id="2init">实验2init</h2>
-<pre><code class="language-sql">DROP TABLE IF EXISTS Reports;
-DROP TABLE IF EXISTS Students;
-CREATE TABLE Students           /*列级完整性约束条件*/
-    (Sno VARCHAR(6),        /*Sno为主键*/
-     Sname VARCHAR(20) NOT NULL,    /*Sname不能为空值*/
-     Semail VARCHAR(50),
-     Scredit DECIMAL( 5,1 ),
-     Sroom VARCHAR(5),
-   CONSTRAINT PK_Stu PRIMARY KEY(Sno),
-   CONSTRAINT CK_Student_Scredit CHECK(Scredit&gt;=0)
-   );
-DROP TABLE IF EXISTS Teachers;
-CREATE TABLE Teachers           /*列级完整性约束条件*/
-    (Tno VARCHAR(6),        /*Tno为主键*/
-     Tname VARCHAR(20) NOT NULL,    /*Tname不能为空值*/
-     Temail VARCHAR(50),
-     Tsalary DECIMAL( 5,1 ),
-   CONSTRAINT PK_Tea PRIMARY KEY(Tno)
-   );
-
-DROP TABLE IF EXISTS Courses;
-CREATE TABLE Courses            /*列级完整性约束条件*/
-    (Cno VARCHAR(6),        /*Cno为主键*/
-     Cname VARCHAR(40) NOT NULL,        /*Cname不能为空值*/
-     Ccredit DECIMAL( 5,1 ),
-   CONSTRAINT PK_Cou PRIMARY KEY(Cno)
-     ); 
-DROP TABLE IF EXISTS Reports;
-CREATE TABLE Reports            /*列级完整性约束条件*/
-    (Sno VARCHAR(6) ,
-     Tno VARCHAR(6) ,
-     Cno VARCHAR(6) ,       
-     Score DECIMAL( 5,1 ),
-     CONSTRAINT PK_Rep PRIMARY KEY(Sno, Tno, Cno),/*Sno,Tno,Cno为主键*/
-     CONSTRAINT FK_Stu_Rep FOREIGN KEY(Sno) REFERENCES Students,
-     CONSTRAINT FK_Tea_Rep FOREIGN KEY(Tno) REFERENCES Teachers,
-   CONSTRAINT FK_Cou_Rep FOREIGN KEY(Cno) REFERENCES Courses
-   );
-   --更改表Students：增加属性Ssex(类型是VARCHAR，长度为3)
-ALTER TABLE IF EXISTS  Students  ADD COLUMN Ssex  VARCHAR(3);
---取消Scredit“大于等于0”约束
-ALTER TABLE IF EXISTS Students DROP CONSTRAINT  CK_Student_Scredit;
---修改表Students中的属性Sname的数据类型改成长度为30。
-ALTER TABLE IF EXISTS  Students  MODIFY  Sname  VARCHAR(30);
-
---修改表Teachers中的属性Tname的数据类型改成长度为30。
-ALTER TABLE IF EXISTS  Teachers  MODIFY  Tname  VARCHAR(30);
-
---修改表Courses中的属性Cname的数据类型改成长度为30。
-ALTER TABLE IF EXISTS  Courses   MODIFY  Cname  VARCHAR(30);
-
---向Students表如下数据
-INSERT INTO Students
-VALUES ('S01','王建平','WJP@nbu.edu.cn', 23.1,'男'),
-        ('S02','刘华','LH@nbu.edu.cn', 24.6,'女'),
-        ('S03','范林军','FLJ@nbu.edu.cn', 16.6,'女'),
-        ('S04','李伟','LW@nbu.edu.cn', 15.8,'男'),
-        ('S26','黄河','HUanghe@nbu.edu.cn', 13.4,'男'),
-        ('S52','长江','Changjiang@nbu.edu.cn', 12.4,'男');
-
---向Teachers表如下数据
-INSERT INTO Teachers 
-VALUES ('T01','刘涛','LT@nbu.edu.cn', 4300),
-        ('T02','吴碧艳','WBY@nbu.edu.cn', 2500),
-        ('T03','张莹','ZY@nbu.edu.cn', 3000),
-        ('T04','张宁雅','ZNY@nbu.edu.cn', 5500),
-        ('T05','叶帅','YS@nbu.edu.cn', 3800),
-        ('T06','杨光美','YGM@nbu.edu.cn', 3500),
-        ('T07','程潜','CQ@nbu.edu.cn', 5000);
-
---向Courses表如下数据
-INSERT INTO Courses 
-  VALUES ('C01','C++',4),
-        ('C02','UML',4),
-        ('C03','JAVA',3),
-        ('C04','算法分析与设计',3),
-        ('C05','数据库原理及应用',3),
-        ('C06','数据结构与算法',4),
-        ('C07','计算机组成原理',4),
-        ('C08','英语',6),
-        ('C09','数字生活',2),
-        ('C10','音乐鉴赏',2),
-        ('C11','体育1',2);
---向Reports表如下数据
-INSERT INTO Reports 
-VALUES ('S01','T01', 'C01',83),
-      ('S01','T03', 'C03',85),
-      ('S02','T01', 'C01',75),
-      ('S02','T02', 'C02',45),
-      ('S02','T03', 'C03',NULL),
-      ('S02','T04', 'C04',NULL),
-      ('S02','T05', 'C05',70),
-      ('S02','T04', 'C06',83),
-      ('S02','T05', 'C07',90),
-      ('S02','T01', 'C08',83),
-      ('S02','T02', 'C09',77),
-      ('S02','T07', 'C10',83),
-      ('S02','T06', 'C11',88),
-      ('S03','T01', 'C08',63),
-      ('S03','T02', 'C02',93),
-      ('S03','T01', 'C01',78),
-      ('S04','T06', 'C06',89),
-      ('S04','T05', 'C05',93),
-      ('S26','T07', 'C10',45),
-      ('S26','T04', 'C04',86),
-      ('S52','T07', 'C10',91),
-      ('S52','T06', 'C11',90),
-      ('S52','T05', 'C05',NULL),
-      ('S52','T01', 'C08',64),
-      ('S52','T02', 'C09',81);
-</code></pre>
-<h2 id="_1">题目</h2>
-<pre><code class="language-sql">--11 查询所有选了“数据库原理及应用”课程的学生编号和姓名
-SELECT t1.sno,t1.cno,cname,sname FROM (
-SELECT reports.sno,cno,sname FROM reports LEFT JOIN students ON reports.sno=students.sno) t1,courses WHERE t1.cno=courses.cno AND courses.cname='数据库原理及应用';
--- 12 求出选择了同一个课程的学生对
-SELECT t1.sno,t1.cno,cname,sname FROM (SELECT reports.sno,cno,sname FROM reports LEFT JOIN students ON reports.sno=students.sno)t1,courses WHERE t1.cno=courses.cno ;
-
---（13）求出至少被两名学生选修的课程编号
-SELECT  cno,count(cno) from reports GROUP BY cno HAVING count(cno)&gt;2;
-
---（14）查询选修了编号S26的学生所选的某个课程的学生编号。
-SELECT * FROM reports WHERE cno IN (
-    SELECT cno FROM reports WHERE sno ='S26'
-);
-
---15 查询学生的基本信息及选修课程编号和成绩
-SELECT * FROM students left JOIN reports on students.sno=reports.sno;
-
---16 查询学号S52的学生的姓名和选修的课程名称及成绩。
-SELECT sname,cname,score from (SELECT * FROM students left JOIN reports on students.sno=reports.sno WHERE students.sno='S52' ) AS x left JOIN  courses on x.cno=courses.cno;
-
---17 查询和学号S52的学生同性别的所有学生资料。
-SELECT * FROM students left JOIN reports on students.sno=reports.sno WHERE Ssex IN (SELECT DISTINCT Ssex from (SELECT * FROM students left JOIN reports on students.sno=reports.sno WHERE students.sno='S52' ) AS x left JOIN  courses on x.cno=courses.cno) ;
-
---（18）查询所有选课的学生的详细信息。
-select * from Students where Sno in (select distinct Sno from Reports);
-
--- 19 查询没有学生选的课程的编号和名称
-SELECT cno,cname FROM courses WHERE  cno NOT IN (SELECT cno FROM reports);
-
---20 查询选修了课程名为C++的学生学号和姓名。
-SELECT t1.sno,t1.cno,cname,sname FROM (
-SELECT reports.sno,cno,sname FROM reports LEFT JOIN students ON reports.sno=students.sno) t1,courses WHERE t1.cno=courses.cno AND courses.cname='C++';
-
---（21）找出选修课程UML或者课程C++的学生学号和姓名。
-SELECT t1.sno,t1.cno,cname,sname FROM (
-SELECT reports.sno,cno,sname FROM reports LEFT JOIN students ON reports.sno=students.sno) t1,courses WHERE t1.cno=courses.cno AND (courses.cname='C++' OR courses.cname='UML');
-
---（22）找出和课程UML或课程C++的学分一样课程名称。
-select Cname from Courses where ccredit in (select ccredit from Courses where Cname='UML'or Cname='C++');
-
---（23）查询所有选修编号C01的课程的学生的姓名。
-SELECT t1.sno,t1.cno,cname,sname FROM (
-SELECT reports.sno,cno,sname FROM reports LEFT JOIN students ON reports.sno=students.sno) t1,courses WHERE t1.cno=courses.cno AND courses.cno='C01';
-
---？？**24 查询选修了所有课程的学生姓名。
-SELECT sno,sname FROM students WHERE NOT EXISTS (SELECT * from courses WHERE not EXISTS (SELECT * FROM reports where sno=students.sno and cno=courses.cno) );
-
---（25）利用集合查询方式，查询选修课程C++或选择课程JAVA的学生的编号、姓名和积分。
-select Sno,Sname,Scredit from Students
-where Sno
-in(select Sno from Reports
-   where Cno
-   in(select Cno from Courses
-      where Cname='C++' )        
-         )
-union
-select Sno,Sname,Scredit from Students
-where Sno
-in(select Sno from Reports
-   where Cno
-   in(select Cno from Courses
-      where Cname='UML' )        
-         );
-
- --（26）实现集合交运算，查询既选修课程C++又选修课程JAVA的学生的编号、姓名和积分。
- select Sno,Sname,Scredit from Students
-where Sno
-in(select Sno from Reports
-   where Cno
-   in(select Cno from Courses
-      where Cname='C++' )        
-         )
-INTERSECT
-select Sno,Sname,Scredit from Students
-where Sno
-in(select Sno from Reports
-   where Cno
-   in(select Cno from Courses
-      where Cname='UML' )        
-         );
- --（27）实现集合减运算，查询选修课程C++而没有选修课程JAVA的学生的编号。
-  select Sno,Sname,Scredit from Students
-where Sno
-in(select Sno from Reports
-   where Cno
-   in(select Cno from Courses
-      where Cname='C++' )        
-         )
-except
-select Sno,Sname,Scredit from Students
-where Sno
-in(select Sno from Reports
-   where Cno
-   in(select Cno from Courses
-      where Cname='UML' )        
-         );
-</code></pre>
-
-
+<h2 id="2init">实验2init<a class="headerlink" href="#2init" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">Reports</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">Students</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Students</span><span class="w">           </span><span class="cm">/*列级完整性约束条件*/</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="p">(</span><span class="n">Sno</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span><span class="w">        </span><span class="cm">/*Sno为主键*/</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">     </span><span class="n">Sname</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">    </span><span class="cm">/*Sname不能为空值*/</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">     </span><span class="n">Semail</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">     </span><span class="n">Scredit</span><span class="w"> </span><span class="nb">DECIMAL</span><span class="p">(</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="w"> </span><span class="p">),</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">     </span><span class="n">Sroom</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">   </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">PK_Stu</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">Sno</span><span class="p">),</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">   </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">CK_Student_Scredit</span><span class="w"> </span><span class="k">CHECK</span><span class="p">(</span><span class="n">Scredit</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">   </span><span class="p">);</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">Teachers</span><span class="p">;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Teachers</span><span class="w">           </span><span class="cm">/*列级完整性约束条件*/</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="p">(</span><span class="n">Tno</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span><span class="w">        </span><span class="cm">/*Tno为主键*/</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">     </span><span class="n">Tname</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">    </span><span class="cm">/*Tname不能为空值*/</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">     </span><span class="n">Temail</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">     </span><span class="n">Tsalary</span><span class="w"> </span><span class="nb">DECIMAL</span><span class="p">(</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="w"> </span><span class="p">),</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">   </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">PK_Tea</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">Tno</span><span class="p">)</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">   </span><span class="p">);</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">Courses</span><span class="p">;</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Courses</span><span class="w">            </span><span class="cm">/*列级完整性约束条件*/</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="p">(</span><span class="n">Cno</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span><span class="w">        </span><span class="cm">/*Cno为主键*/</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">     </span><span class="n">Cname</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">        </span><span class="cm">/*Cname不能为空值*/</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">     </span><span class="n">Ccredit</span><span class="w"> </span><span class="nb">DECIMAL</span><span class="p">(</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="w"> </span><span class="p">),</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">   </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">PK_Cou</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">Cno</span><span class="p">)</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">     </span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">Reports</span><span class="p">;</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Reports</span><span class="w">            </span><span class="cm">/*列级完整性约束条件*/</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">    </span><span class="p">(</span><span class="n">Sno</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="p">,</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">     </span><span class="n">Tno</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="p">,</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">     </span><span class="n">Cno</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="p">,</span><span class="w">       </span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">     </span><span class="n">Score</span><span class="w"> </span><span class="nb">DECIMAL</span><span class="p">(</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="w"> </span><span class="p">),</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">     </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">PK_Rep</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">Sno</span><span class="p">,</span><span class="w"> </span><span class="n">Tno</span><span class="p">,</span><span class="w"> </span><span class="n">Cno</span><span class="p">),</span><span class="cm">/*Sno,Tno,Cno为主键*/</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">     </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">FK_Stu_Rep</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">Sno</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Students</span><span class="p">,</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">     </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">FK_Tea_Rep</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">Tno</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Teachers</span><span class="p">,</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">   </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">FK_Cou_Rep</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">Cno</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Courses</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">   </span><span class="p">);</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">   </span><span class="c1">--更改表Students：增加属性Ssex(类型是VARCHAR，长度为3)</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w">  </span><span class="n">Students</span><span class="w">  </span><span class="k">ADD</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">Ssex</span><span class="w">  </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="c1">--取消Scredit“大于等于0”约束</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">DROP</span><span class="w"> </span><span class="k">CONSTRAINT</span><span class="w">  </span><span class="n">CK_Student_Scredit</span><span class="p">;</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="c1">--修改表Students中的属性Sname的数据类型改成长度为30。</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w">  </span><span class="n">Students</span><span class="w">  </span><span class="k">MODIFY</span><span class="w">  </span><span class="n">Sname</span><span class="w">  </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="c1">--修改表Teachers中的属性Tname的数据类型改成长度为30。</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w">  </span><span class="n">Teachers</span><span class="w">  </span><span class="k">MODIFY</span><span class="w">  </span><span class="n">Tname</span><span class="w">  </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="c1">--修改表Courses中的属性Cname的数据类型改成长度为30。</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w">  </span><span class="n">Courses</span><span class="w">   </span><span class="k">MODIFY</span><span class="w">  </span><span class="n">Cname</span><span class="w">  </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>
+<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="c1">--向Students表如下数据</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Students</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;S01&#39;</span><span class="p">,</span><span class="s1">&#39;王建平&#39;</span><span class="p">,</span><span class="s1">&#39;WJP@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">23</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;男&#39;</span><span class="p">),</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;刘华&#39;</span><span class="p">,</span><span class="s1">&#39;LH@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">24</span><span class="p">.</span><span class="mi">6</span><span class="p">,</span><span class="s1">&#39;女&#39;</span><span class="p">),</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;S03&#39;</span><span class="p">,</span><span class="s1">&#39;范林军&#39;</span><span class="p">,</span><span class="s1">&#39;FLJ@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">.</span><span class="mi">6</span><span class="p">,</span><span class="s1">&#39;女&#39;</span><span class="p">),</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;S04&#39;</span><span class="p">,</span><span class="s1">&#39;李伟&#39;</span><span class="p">,</span><span class="s1">&#39;LW@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span><span class="s1">&#39;男&#39;</span><span class="p">),</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;S26&#39;</span><span class="p">,</span><span class="s1">&#39;黄河&#39;</span><span class="p">,</span><span class="s1">&#39;HUanghe@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">13</span><span class="p">.</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;男&#39;</span><span class="p">),</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;S52&#39;</span><span class="p">,</span><span class="s1">&#39;长江&#39;</span><span class="p">,</span><span class="s1">&#39;Changjiang@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">.</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;男&#39;</span><span class="p">);</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>
+<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="c1">--向Teachers表如下数据</span>
+<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Teachers</span><span class="w"> </span>
+<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;T01&#39;</span><span class="p">,</span><span class="s1">&#39;刘涛&#39;</span><span class="p">,</span><span class="s1">&#39;LT@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">4300</span><span class="p">),</span>
+<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;T02&#39;</span><span class="p">,</span><span class="s1">&#39;吴碧艳&#39;</span><span class="p">,</span><span class="s1">&#39;WBY@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2500</span><span class="p">),</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;T03&#39;</span><span class="p">,</span><span class="s1">&#39;张莹&#39;</span><span class="p">,</span><span class="s1">&#39;ZY@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3000</span><span class="p">),</span>
+<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;T04&#39;</span><span class="p">,</span><span class="s1">&#39;张宁雅&#39;</span><span class="p">,</span><span class="s1">&#39;ZNY@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">5500</span><span class="p">),</span>
+<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;T05&#39;</span><span class="p">,</span><span class="s1">&#39;叶帅&#39;</span><span class="p">,</span><span class="s1">&#39;YS@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3800</span><span class="p">),</span>
+<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;T06&#39;</span><span class="p">,</span><span class="s1">&#39;杨光美&#39;</span><span class="p">,</span><span class="s1">&#39;YGM@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3500</span><span class="p">),</span>
+<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;T07&#39;</span><span class="p">,</span><span class="s1">&#39;程潜&#39;</span><span class="p">,</span><span class="s1">&#39;CQ@nbu.edu.cn&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">);</span>
+<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>
+<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="c1">--向Courses表如下数据</span>
+<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Courses</span><span class="w"> </span>
+<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a><span class="w">  </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;C01&#39;</span><span class="p">,</span><span class="s1">&#39;C++&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
+<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;C02&#39;</span><span class="p">,</span><span class="s1">&#39;UML&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
+<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;C03&#39;</span><span class="p">,</span><span class="s1">&#39;JAVA&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span>
+<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;C04&#39;</span><span class="p">,</span><span class="s1">&#39;算法分析与设计&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span>
+<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;C05&#39;</span><span class="p">,</span><span class="s1">&#39;数据库原理及应用&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span>
+<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;C06&#39;</span><span class="p">,</span><span class="s1">&#39;数据结构与算法&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
+<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;C07&#39;</span><span class="p">,</span><span class="s1">&#39;计算机组成原理&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
+<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;C08&#39;</span><span class="p">,</span><span class="s1">&#39;英语&#39;</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span>
+<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;C09&#39;</span><span class="p">,</span><span class="s1">&#39;数字生活&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
+<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;C10&#39;</span><span class="p">,</span><span class="s1">&#39;音乐鉴赏&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
+<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a><span class="w">        </span><span class="p">(</span><span class="s1">&#39;C11&#39;</span><span class="p">,</span><span class="s1">&#39;体育1&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a><span class="c1">--向Reports表如下数据</span>
+<a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Reports</span><span class="w"> </span>
+<a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;S01&#39;</span><span class="p">,</span><span class="s1">&#39;T01&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C01&#39;</span><span class="p">,</span><span class="mi">83</span><span class="p">),</span>
+<a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S01&#39;</span><span class="p">,</span><span class="s1">&#39;T03&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C03&#39;</span><span class="p">,</span><span class="mi">85</span><span class="p">),</span>
+<a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T01&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C01&#39;</span><span class="p">,</span><span class="mi">75</span><span class="p">),</span>
+<a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T02&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C02&#39;</span><span class="p">,</span><span class="mi">45</span><span class="p">),</span>
+<a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T03&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C03&#39;</span><span class="p">,</span><span class="k">NULL</span><span class="p">),</span>
+<a id="__codelineno-0-91" name="__codelineno-0-91" href="#__codelineno-0-91"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T04&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C04&#39;</span><span class="p">,</span><span class="k">NULL</span><span class="p">),</span>
+<a id="__codelineno-0-92" name="__codelineno-0-92" href="#__codelineno-0-92"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T05&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C05&#39;</span><span class="p">,</span><span class="mi">70</span><span class="p">),</span>
+<a id="__codelineno-0-93" name="__codelineno-0-93" href="#__codelineno-0-93"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T04&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C06&#39;</span><span class="p">,</span><span class="mi">83</span><span class="p">),</span>
+<a id="__codelineno-0-94" name="__codelineno-0-94" href="#__codelineno-0-94"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T05&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C07&#39;</span><span class="p">,</span><span class="mi">90</span><span class="p">),</span>
+<a id="__codelineno-0-95" name="__codelineno-0-95" href="#__codelineno-0-95"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T01&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C08&#39;</span><span class="p">,</span><span class="mi">83</span><span class="p">),</span>
+<a id="__codelineno-0-96" name="__codelineno-0-96" href="#__codelineno-0-96"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T02&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C09&#39;</span><span class="p">,</span><span class="mi">77</span><span class="p">),</span>
+<a id="__codelineno-0-97" name="__codelineno-0-97" href="#__codelineno-0-97"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T07&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C10&#39;</span><span class="p">,</span><span class="mi">83</span><span class="p">),</span>
+<a id="__codelineno-0-98" name="__codelineno-0-98" href="#__codelineno-0-98"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S02&#39;</span><span class="p">,</span><span class="s1">&#39;T06&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C11&#39;</span><span class="p">,</span><span class="mi">88</span><span class="p">),</span>
+<a id="__codelineno-0-99" name="__codelineno-0-99" href="#__codelineno-0-99"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S03&#39;</span><span class="p">,</span><span class="s1">&#39;T01&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C08&#39;</span><span class="p">,</span><span class="mi">63</span><span class="p">),</span>
+<a id="__codelineno-0-100" name="__codelineno-0-100" href="#__codelineno-0-100"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S03&#39;</span><span class="p">,</span><span class="s1">&#39;T02&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C02&#39;</span><span class="p">,</span><span class="mi">93</span><span class="p">),</span>
+<a id="__codelineno-0-101" name="__codelineno-0-101" href="#__codelineno-0-101"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S03&#39;</span><span class="p">,</span><span class="s1">&#39;T01&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C01&#39;</span><span class="p">,</span><span class="mi">78</span><span class="p">),</span>
+<a id="__codelineno-0-102" name="__codelineno-0-102" href="#__codelineno-0-102"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S04&#39;</span><span class="p">,</span><span class="s1">&#39;T06&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C06&#39;</span><span class="p">,</span><span class="mi">89</span><span class="p">),</span>
+<a id="__codelineno-0-103" name="__codelineno-0-103" href="#__codelineno-0-103"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S04&#39;</span><span class="p">,</span><span class="s1">&#39;T05&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C05&#39;</span><span class="p">,</span><span class="mi">93</span><span class="p">),</span>
+<a id="__codelineno-0-104" name="__codelineno-0-104" href="#__codelineno-0-104"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S26&#39;</span><span class="p">,</span><span class="s1">&#39;T07&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C10&#39;</span><span class="p">,</span><span class="mi">45</span><span class="p">),</span>
+<a id="__codelineno-0-105" name="__codelineno-0-105" href="#__codelineno-0-105"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S26&#39;</span><span class="p">,</span><span class="s1">&#39;T04&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C04&#39;</span><span class="p">,</span><span class="mi">86</span><span class="p">),</span>
+<a id="__codelineno-0-106" name="__codelineno-0-106" href="#__codelineno-0-106"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S52&#39;</span><span class="p">,</span><span class="s1">&#39;T07&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C10&#39;</span><span class="p">,</span><span class="mi">91</span><span class="p">),</span>
+<a id="__codelineno-0-107" name="__codelineno-0-107" href="#__codelineno-0-107"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S52&#39;</span><span class="p">,</span><span class="s1">&#39;T06&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C11&#39;</span><span class="p">,</span><span class="mi">90</span><span class="p">),</span>
+<a id="__codelineno-0-108" name="__codelineno-0-108" href="#__codelineno-0-108"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S52&#39;</span><span class="p">,</span><span class="s1">&#39;T05&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C05&#39;</span><span class="p">,</span><span class="k">NULL</span><span class="p">),</span>
+<a id="__codelineno-0-109" name="__codelineno-0-109" href="#__codelineno-0-109"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S52&#39;</span><span class="p">,</span><span class="s1">&#39;T01&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C08&#39;</span><span class="p">,</span><span class="mi">64</span><span class="p">),</span>
+<a id="__codelineno-0-110" name="__codelineno-0-110" href="#__codelineno-0-110"></a><span class="w">      </span><span class="p">(</span><span class="s1">&#39;S52&#39;</span><span class="p">,</span><span class="s1">&#39;T02&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C09&#39;</span><span class="p">,</span><span class="mi">81</span><span class="p">);</span>
+</code></pre></div>
+<h2 id="_1">题目<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">--11 查询所有选了“数据库原理及应用”课程的学生编号和姓名</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">sno</span><span class="p">,</span><span class="n">t1</span><span class="p">.</span><span class="n">cno</span><span class="p">,</span><span class="n">cname</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="p">,</span><span class="n">cno</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="p">)</span><span class="w"> </span><span class="n">t1</span><span class="p">,</span><span class="n">courses</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">cno</span><span class="o">=</span><span class="n">courses</span><span class="p">.</span><span class="n">cno</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">courses</span><span class="p">.</span><span class="n">cname</span><span class="o">=</span><span class="s1">&#39;数据库原理及应用&#39;</span><span class="p">;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">-- 12 求出选择了同一个课程的学生对</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">sno</span><span class="p">,</span><span class="n">t1</span><span class="p">.</span><span class="n">cno</span><span class="p">,</span><span class="n">cname</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="p">,</span><span class="n">cno</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="p">)</span><span class="n">t1</span><span class="p">,</span><span class="n">courses</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">cno</span><span class="o">=</span><span class="n">courses</span><span class="p">.</span><span class="n">cno</span><span class="w"> </span><span class="p">;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1">--（13）求出至少被两名学生选修的课程编号</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="k">SELECT</span><span class="w">  </span><span class="n">cno</span><span class="p">,</span><span class="k">count</span><span class="p">(</span><span class="n">cno</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">cno</span><span class="w"> </span><span class="k">HAVING</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="n">cno</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">2</span><span class="p">;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1">--（14）查询选修了编号S26的学生所选的某个课程的学生编号。</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">cno</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="n">cno</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">sno</span><span class="w"> </span><span class="o">=</span><span class="s1">&#39;S26&#39;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">);</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="c1">--15 查询学生的基本信息及选修课程编号和成绩</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">left</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="p">;</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="c1">--16 查询学号S52的学生的姓名和选修的课程名称及成绩。</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">sname</span><span class="p">,</span><span class="n">cname</span><span class="p">,</span><span class="n">score</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">left</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="s1">&#39;S52&#39;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">left</span><span class="w"> </span><span class="k">JOIN</span><span class="w">  </span><span class="n">courses</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">x</span><span class="p">.</span><span class="n">cno</span><span class="o">=</span><span class="n">courses</span><span class="p">.</span><span class="n">cno</span><span class="p">;</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="c1">--17 查询和学号S52的学生同性别的所有学生资料。</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">left</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">Ssex</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">Ssex</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">left</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="s1">&#39;S52&#39;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">left</span><span class="w"> </span><span class="k">JOIN</span><span class="w">  </span><span class="n">courses</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">x</span><span class="p">.</span><span class="n">cno</span><span class="o">=</span><span class="n">courses</span><span class="p">.</span><span class="n">cno</span><span class="p">)</span><span class="w"> </span><span class="p">;</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="c1">--（18）查询所有选课的学生的详细信息。</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">Sno</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">distinct</span><span class="w"> </span><span class="n">Sno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Reports</span><span class="p">);</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="c1">-- 19 查询没有学生选的课程的编号和名称</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">cno</span><span class="p">,</span><span class="n">cname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">courses</span><span class="w"> </span><span class="k">WHERE</span><span class="w">  </span><span class="n">cno</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">cno</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">reports</span><span class="p">);</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="c1">--20 查询选修了课程名为C++的学生学号和姓名。</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">sno</span><span class="p">,</span><span class="n">t1</span><span class="p">.</span><span class="n">cno</span><span class="p">,</span><span class="n">cname</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="p">,</span><span class="n">cno</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="p">)</span><span class="w"> </span><span class="n">t1</span><span class="p">,</span><span class="n">courses</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">cno</span><span class="o">=</span><span class="n">courses</span><span class="p">.</span><span class="n">cno</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">courses</span><span class="p">.</span><span class="n">cname</span><span class="o">=</span><span class="s1">&#39;C++&#39;</span><span class="p">;</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="c1">--（21）找出选修课程UML或者课程C++的学生学号和姓名。</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">sno</span><span class="p">,</span><span class="n">t1</span><span class="p">.</span><span class="n">cno</span><span class="p">,</span><span class="n">cname</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="p">,</span><span class="n">cno</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="p">)</span><span class="w"> </span><span class="n">t1</span><span class="p">,</span><span class="n">courses</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">cno</span><span class="o">=</span><span class="n">courses</span><span class="p">.</span><span class="n">cno</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="p">(</span><span class="n">courses</span><span class="p">.</span><span class="n">cname</span><span class="o">=</span><span class="s1">&#39;C++&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">courses</span><span class="p">.</span><span class="n">cname</span><span class="o">=</span><span class="s1">&#39;UML&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="c1">--（22）找出和课程UML或课程C++的学分一样课程名称。</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="k">select</span><span class="w"> </span><span class="n">Cname</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Courses</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">ccredit</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">ccredit</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Courses</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">Cname</span><span class="o">=</span><span class="s1">&#39;UML&#39;</span><span class="k">or</span><span class="w"> </span><span class="n">Cname</span><span class="o">=</span><span class="s1">&#39;C++&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="c1">--（23）查询所有选修编号C01的课程的学生的姓名。</span>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">sno</span><span class="p">,</span><span class="n">t1</span><span class="p">.</span><span class="n">cno</span><span class="p">,</span><span class="n">cname</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="p">,</span><span class="n">cno</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">reports</span><span class="p">.</span><span class="n">sno</span><span class="o">=</span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="p">)</span><span class="w"> </span><span class="n">t1</span><span class="p">,</span><span class="n">courses</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">cno</span><span class="o">=</span><span class="n">courses</span><span class="p">.</span><span class="n">cno</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">courses</span><span class="p">.</span><span class="n">cno</span><span class="o">=</span><span class="s1">&#39;C01&#39;</span><span class="p">;</span>
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a><span class="c1">--？？**24 查询选修了所有课程的学生姓名。</span>
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">sno</span><span class="p">,</span><span class="n">sname</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">courses</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">reports</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">sno</span><span class="o">=</span><span class="n">students</span><span class="p">.</span><span class="n">sno</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">cno</span><span class="o">=</span><span class="n">courses</span><span class="p">.</span><span class="n">cno</span><span class="p">)</span><span class="w"> </span><span class="p">);</span>
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a><span class="c1">--（25）利用集合查询方式，查询选修课程C++或选择课程JAVA的学生的编号、姓名和积分。</span>
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="p">,</span><span class="n">Sname</span><span class="p">,</span><span class="n">Scredit</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Students</span>
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="k">where</span><span class="w"> </span><span class="n">Sno</span>
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Reports</span>
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a><span class="w">   </span><span class="k">where</span><span class="w"> </span><span class="n">Cno</span>
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a><span class="w">   </span><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Cno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Courses</span>
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a><span class="w">      </span><span class="k">where</span><span class="w"> </span><span class="n">Cname</span><span class="o">=</span><span class="s1">&#39;C++&#39;</span><span class="w"> </span><span class="p">)</span><span class="w">        </span>
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a><span class="w">         </span><span class="p">)</span>
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a><span class="k">union</span>
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="p">,</span><span class="n">Sname</span><span class="p">,</span><span class="n">Scredit</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Students</span>
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a><span class="k">where</span><span class="w"> </span><span class="n">Sno</span>
+<a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Reports</span>
+<a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a><span class="w">   </span><span class="k">where</span><span class="w"> </span><span class="n">Cno</span>
+<a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a><span class="w">   </span><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Cno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Courses</span>
+<a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a><span class="w">      </span><span class="k">where</span><span class="w"> </span><span class="n">Cname</span><span class="o">=</span><span class="s1">&#39;UML&#39;</span><span class="w"> </span><span class="p">)</span><span class="w">        </span>
+<a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a><span class="w">         </span><span class="p">);</span>
+<a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>
+<a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a><span class="w"> </span><span class="c1">--（26）实现集合交运算，查询既选修课程C++又选修课程JAVA的学生的编号、姓名和积分。</span>
+<a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="p">,</span><span class="n">Sname</span><span class="p">,</span><span class="n">Scredit</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Students</span>
+<a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a><span class="k">where</span><span class="w"> </span><span class="n">Sno</span>
+<a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Reports</span>
+<a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a><span class="w">   </span><span class="k">where</span><span class="w"> </span><span class="n">Cno</span>
+<a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a><span class="w">   </span><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Cno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Courses</span>
+<a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a><span class="w">      </span><span class="k">where</span><span class="w"> </span><span class="n">Cname</span><span class="o">=</span><span class="s1">&#39;C++&#39;</span><span class="w"> </span><span class="p">)</span><span class="w">        </span>
+<a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a><span class="w">         </span><span class="p">)</span>
+<a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a><span class="k">INTERSECT</span>
+<a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="p">,</span><span class="n">Sname</span><span class="p">,</span><span class="n">Scredit</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Students</span>
+<a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a><span class="k">where</span><span class="w"> </span><span class="n">Sno</span>
+<a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Reports</span>
+<a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a><span class="w">   </span><span class="k">where</span><span class="w"> </span><span class="n">Cno</span>
+<a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a><span class="w">   </span><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Cno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Courses</span>
+<a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a><span class="w">      </span><span class="k">where</span><span class="w"> </span><span class="n">Cname</span><span class="o">=</span><span class="s1">&#39;UML&#39;</span><span class="w"> </span><span class="p">)</span><span class="w">        </span>
+<a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a><span class="w">         </span><span class="p">);</span>
+<a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a><span class="w"> </span><span class="c1">--（27）实现集合减运算，查询选修课程C++而没有选修课程JAVA的学生的编号。</span>
+<a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a><span class="w">  </span><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="p">,</span><span class="n">Sname</span><span class="p">,</span><span class="n">Scredit</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Students</span>
+<a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a><span class="k">where</span><span class="w"> </span><span class="n">Sno</span>
+<a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Reports</span>
+<a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a><span class="w">   </span><span class="k">where</span><span class="w"> </span><span class="n">Cno</span>
+<a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a><span class="w">   </span><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Cno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Courses</span>
+<a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a><span class="w">      </span><span class="k">where</span><span class="w"> </span><span class="n">Cname</span><span class="o">=</span><span class="s1">&#39;C++&#39;</span><span class="w"> </span><span class="p">)</span><span class="w">        </span>
+<a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a><span class="w">         </span><span class="p">)</span>
+<a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a><span class="k">except</span>
+<a id="__codelineno-1-90" name="__codelineno-1-90" href="#__codelineno-1-90"></a><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="p">,</span><span class="n">Sname</span><span class="p">,</span><span class="n">Scredit</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Students</span>
+<a id="__codelineno-1-91" name="__codelineno-1-91" href="#__codelineno-1-91"></a><span class="k">where</span><span class="w"> </span><span class="n">Sno</span>
+<a id="__codelineno-1-92" name="__codelineno-1-92" href="#__codelineno-1-92"></a><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Sno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Reports</span>
+<a id="__codelineno-1-93" name="__codelineno-1-93" href="#__codelineno-1-93"></a><span class="w">   </span><span class="k">where</span><span class="w"> </span><span class="n">Cno</span>
+<a id="__codelineno-1-94" name="__codelineno-1-94" href="#__codelineno-1-94"></a><span class="w">   </span><span class="k">in</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">Cno</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Courses</span>
+<a id="__codelineno-1-95" name="__codelineno-1-95" href="#__codelineno-1-95"></a><span class="w">      </span><span class="k">where</span><span class="w"> </span><span class="n">Cname</span><span class="o">=</span><span class="s1">&#39;UML&#39;</span><span class="w"> </span><span class="p">)</span><span class="w">        </span>
+<a id="__codelineno-1-96" name="__codelineno-1-96" href="#__codelineno-1-96"></a><span class="w">         </span><span class="p">);</span>
+</code></pre></div>
 
 
 
-                
-              </article>
-            </div>
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="lindocedskes/nbu-icicles"
+        data-repo-id="R_kgDOMGJWvg"
+        data-category="General"
+        data-category-id="DIC_kwDOMGJWvs4Cf87g"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+  <script>
+    if (document.querySelector("body").getAttribute("data-md-color-scheme") === "slate") {
+      var giscus = document.querySelector("script[src*=giscus]")
+      giscus.setAttribute("data-theme", "https://gcore.jsdelivr.net/gh/TonyCrane/note/docs/css/giscus.css") 
+    }
+  </script>
+
+                  
+                </article>
+              </div>
+            
+            
+          </div>
           
+            <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+              回到页面顶部
+            </a>
           
-        </div>
+        </main>
         
-      </main>
-      
-        <footer class="md-footer">
+          <footer class="md-footer">
+  
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -906,17 +1150,20 @@ in(select Sno from Reports
     </div>
   </div>
 </footer>
+        
+      </div>
+      <div class="md-dialog" data-md-component="dialog">
+        <div class="md-dialog__inner md-typeset"></div>
+      </div>
       
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
-    
-    
-      <script src="../../../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "content.action.edit", "navigation.tracking", "navigation.top", "navigation.tabs", "navigation.footer", "navigation.indexes", "navigation.sections"], "search": "../../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
       
-    
-  </body>
-</html>
+      
+        <script src="../../../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+        
+          <script src="../../../../js/katex.js"></script>
+        
+      
+    </body>
+  </html>
+  
